@@ -1,0 +1,10 @@
+.card {
+	height: 800px;
+	width: 50%;
+	margin-top: 50px;
+	background-color: #eddbf0;
+	border-radius: 10px;
+}
+.card__title {
+	font-family: 'HAPPY VALENTINES DAY';
+}
