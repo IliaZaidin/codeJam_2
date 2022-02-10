@@ -1,1 +1,9 @@
-# codeJam_2
+# # February Code Jam
+
+This Code Jam is dedicated to Valentine’s Day! 
+
+Some people love this holiday because it gives them a chance to express their feelings, get closer with their loved ones, or even confess their romantic feelings. Some people hate/ignore this holiday for various reasons, such as it being too fixed on romantic relationships or for serving as an occasion to buy useless stuff that pollutes the planet. 
+
+Our webpage helps people create Valentine's cards and send them to their beloved ones. Our drag-and-drop interface allows creating original products with personal touch.
+
+Link to the page: 
