@@ -6,4 +6,4 @@ Some people love this holiday because it gives them a chance to express their fe
 
 Our webpage helps people create Valentine's cards and send them to their beloved ones. Our drag-and-drop interface allows creating original products with personal touch.
 
-Link to the page: 
+Link to the page: https://eduard-l.github.io/codeJam_2/
