@@ -1,16 +1,34 @@
 import "./Main.css"
 import { Card } from '../Card/Card'
 import { Button } from '../Button/Button';
+import { PopupWithImages } from '../PopupWithImages/PopupWithImages'
+import { initialImages } from "../../utils/costants";
+import { Image } from "../Image/Image";
 
-export function Main() {
+export function Main({ isOpen, setIsPopupWithImgOpen }) {
     return (
         <div className="Main">
-            <Card />
-            <div className='button-wrapper'>
-                <Button classType="button_type_add-image" text='' />
-                <Button classType="button_type_add-text" text='Text' />
+            <div className="page-wrapper">
+                <Card />
+                <div className='button-wrapper'>
+                    <Button classType="button_type_add-image" text='' onClick={setIsPopupWithImgOpen} />
+                    <Button classType="button_type_add-text" text='Text' />
 
+
+                </div>
             </div>
+            <PopupWithImages isOpen={isOpen} >
+
+                {initialImages.map((image) => {
+                    return (
+
+                        <Image src={image.src} key={image.id} alt={image.alt} />
+                    )
+
+
+                })}
+
+            </PopupWithImages>
         </div>
     )
 }
