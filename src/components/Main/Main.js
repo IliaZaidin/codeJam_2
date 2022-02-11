@@ -8,17 +8,18 @@ import { Image } from "../Image/Image";
 export function Main({ isOpen, setIsPopupWithImgOpen, onImageClick }) {
     return (
         <div className="Main">
-            <div className="page-wrapper">
-                <Card id="div1" />
+
+            <Card id="div1" />
+
+            <Button classType="button_type_add-image" text='' onClick={setIsPopupWithImgOpen} />
+            <div className='button-wrapper'>
+
+                <Button classType="button_type_add-text" text='Text' />
+                <Button classType='button_type_upload' text='Upload' />
 
 
-                <div className='button-wrapper'>
-                    <Button classType="button_type_add-image" text='' onClick={setIsPopupWithImgOpen} />
-                    <Button classType="button_type_add-text" text='Text' />
-
-
-                </div>
             </div>
+
             <PopupWithImages isOpen={isOpen} >
 
                 {initialImages.map((image) => {

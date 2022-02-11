@@ -3,7 +3,7 @@ import './App.css';
 import { Header } from './components/Header/Header';
 import { Main } from './components/Main/Main'
 import { useState, useEfftect } from 'react';
-import { Image } from './components/Image/Image';
+import { Logo } from './components/Logo/Logo'
 
 
 
@@ -19,7 +19,7 @@ function App() {
 
   function setCardBackGround(imgsrc) {
     document.querySelector('.card').style.backgroundImage = `url(${imgsrc})`
-    console.log(imgsrc)
+
   }
 
 
@@ -27,7 +27,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+
+      <Header children>
+        <Logo />
+      </Header>
+
+
 
       <Main
         isOpen={isPopupWithImgOpen}
