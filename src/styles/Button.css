@@ -9,7 +9,7 @@
 	background-color: #625959;
 }
 .button_type_add-image {
-	background-image: url('../../images/button__image.png');
+	background-image: url('../images/button__image.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 80%;
