@@ -1,0 +1,24 @@
+.popup_type_select-img {
+	background-color: #625959;
+	height: 100px;
+	border-radius: 10px;
+	position: fixed;
+	width: 80%;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	align-items: center;
+	transition: opacity .7s, visibility .7s;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	margin-bottom: 76px;
+}
+
+.popup__visible {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}

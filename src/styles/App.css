@@ -1,18 +1,18 @@
 .App {
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  background-color: #C69CC1;
+	background-color: #c69cc1;
 }
 
 .App__wrapper {
-  padding: 0;
-  margin: 0 auto;
-  width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	padding: 0;
+	margin: 0 auto;
+	width: 1000px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

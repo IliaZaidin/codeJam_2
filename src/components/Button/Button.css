@@ -1,0 +1,28 @@
+.button {
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	box-sizing: border-box;
+
+	border-style: none;
+	border-radius: 10px;
+	background-color: #625959;
+}
+.button_type_add-image {
+	background-image: url('../../images/button__image.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	margin-top: 10px;
+}
+.button_type_add-text {
+	color: white;
+	font-size: 30px;
+	font-family: monospace;
+}
+.button_type_upload {
+	margin-top: 10px;
+	color: white;
+	font-size: 25px;
+	padding: 0;
+}
