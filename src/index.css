@@ -1,12 +1,11 @@
-body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-		'Droid Sans', 'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: rgba(198, 156, 193, 1);
-}
+@import url(./vendor/normalize.css);
+@import url(./fonts/fonts.css);
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
+@import url(./styles/App.css);
+@import url(./styles/Button.css);
+@import url(./styles/Card.css);
+@import url(./styles/Header.css);
+@import url(./styles/Image.css);
+@import url(./styles/Logo.css);
+@import url(./styles/Main.css);
+@import url(./styles/PopupWithImages.css);

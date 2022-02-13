@@ -11,8 +11,12 @@
     "icons": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "react-icons": "^4.3.1",
     "react-scripts": "5.0.0",
+=======
+    "react-scripts": "^5.0.0",
+>>>>>>> 997ef7f3f704ad793014adad99e1a50e97b196dc
     "web-vitals": "^2.1.4"
   },
   "scripts": {
