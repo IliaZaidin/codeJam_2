@@ -7,3 +7,9 @@
 
 	background-position: center;
 }
+
+@media screen and (max-width: 999px) {
+  .card {
+    width: 360px;
+  }
+}
