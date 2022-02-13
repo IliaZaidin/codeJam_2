@@ -1,29 +1,20 @@
 .button {
 	width: 96px;
 	height: 96px;
-	padding: 10px;
+	padding: 0;
 	box-sizing: border-box;
 
 	border-style: none;
 	border-radius: 10px;
 	background-color: #625959;
+  color: white;
+  font-family: Skranji;
+  font-size: 26px;
 }
 .button_type_add-image {
-	background-image: url('../../images/button__image.png');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 80%;
-	margin-top: 10px;
+	background-image: url('../../images/heart-1-icon.png');
 }
-.button_type_add-text {
-	color: white;
-	font-size: 30px;
-	font-family: Skranji;
+/* .button_type_add-text {
 }
 .button_type_upload {
-	margin-top: 10px;
-	color: white;
-	font-size: 25px;
-	padding: 0;
-  font-family: Skranji;
-}
+} */

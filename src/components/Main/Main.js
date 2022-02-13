@@ -10,13 +10,18 @@ export function Main({ isOpen, setIsPopupWithImgOpen, onImageClick }) {
 
       <Card id="div1" />
 
-      <Button classType="button_type_add-image" text='' onClick={setIsPopupWithImgOpen} />
       <div className='button-wrapper'>
         <Button classType="button_type_add-text" text='Text' />
         <Button classType='button_type_upload' text='Upload' />
+        {/* <Button classType="button_type_add-image" text='' onClick={setIsPopupWithImgOpen} /> */}
+        {initialImages.map((image) => {
+          return (
+            <Image src={image.src} key={image.id} alt={image.alt} id={image.id} onImageClick={onImageClick} />
+          )
+        })}
       </div>
 
-      <PopupWithImages isOpen={isOpen} >
+      {/* <PopupWithImages isOpen={isOpen} >
 
         {initialImages.map((image) => {
           return (
@@ -24,7 +29,7 @@ export function Main({ isOpen, setIsPopupWithImgOpen, onImageClick }) {
           )
         })}
 
-      </PopupWithImages>
+      </PopupWithImages> */}
     </div>
   )
 }

@@ -15,7 +15,6 @@
 
 @media screen and (max-width: 999px) {
   .header {
-    width: 360px;
     flex-direction: column;
   }
   .header__title {
