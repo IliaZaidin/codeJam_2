@@ -1,8 +1,8 @@
-import { Card } from './Card'
-import { Button } from './Button';
-import { PopupWithImages } from './PopupWithImages'
-import { initialImages } from "../utils/costants";
-import { Image } from "./Image";
+import { Card } from '../Card/Card'
+import { Button } from '../Button/Button';
+import { PopupWithImages } from '../PopupWithImages/PopupWithImages'
+import { initialImages } from "../../utils/costants";
+import { Image } from "../Image/Image";
 
 export function Main({ isOpen, setIsPopupWithImgOpen, onImageClick }) {
   return (

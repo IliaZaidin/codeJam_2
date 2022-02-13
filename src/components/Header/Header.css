@@ -1,0 +1,25 @@
+.header {
+	margin: 30px 0 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header__title {
+	text-align: center;
+	margin: 0;
+  padding: 0;
+	font-size: 56px;
+	color: #8D0D8F;
+	font-family: Skranji;
+}
+
+@media screen and (max-width: 999px) {
+  .header {
+    width: 360px;
+    flex-direction: column;
+  }
+  .header__title {
+    font-size: 20px;
+  }
+}
+

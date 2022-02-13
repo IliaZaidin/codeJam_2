@@ -1,7 +1,7 @@
-import '../index.css';
-import { Header } from './Header';
-import { Main } from './Main';
-import { Logo } from './Logo';
+import '../../index.css';
+import { Header } from '../Header/Header';
+import { Main } from '../Main/Main';
+import { Logo } from '../Logo/Logo';
 import { useState, useEfftect } from 'react';
 
 function App() {
