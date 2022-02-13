@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './Card.css'
 
 export function Card({ id }) {
@@ -16,4 +17,11 @@ export function Card({ id }) {
 
         </div >
     )
+=======
+export function Card({ id }) {
+  return (
+    <div className='card' id={id} >
+    </div >
+  )
+>>>>>>> 0513a751176f7271a0184e95bc3c66f6964435df
 }

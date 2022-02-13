@@ -1,45 +1,40 @@
-import image1 from '../images/button__image.png'
-import image2 from '../images/image.png'
-import image3 from '../images/image3.png'
-import image4 from '../images/image4.png'
-import image5 from '../images/image11.png'
-import image6 from '../images/image12.png'
-
-
-
-
+import image1 from '../images/heart-1-icon.png'
+import image2 from '../images/heart-2-icon.png'
+import image3 from '../images/heart-3-icon.png'
+import image4 from '../images/heart-4-icon.png'
+import image5 from '../images/cupid-1-icon.png'
+import image6 from '../images/cupid-2-icon.png'
 
 export const initialImages = [
     {
-        name: 'heart',
+        name: 'heart-icon',
         src: image1,
         id: 1
     },
     {
-        name: 'heart',
+        name: 'hear-icon',
         src: image2,
         id: 2
     },
     {
-        name: 'heart',
+        name: 'heart-icon',
         src: image3,
         id: 3
     },
     {
-        name: 'real-heart',
+        name: 'heart-icon',
         src: image4,
         id: 4
     },
     {
-        name: 'cupidon',
+        name: 'cupid-icon',
         src: image5,
         id: 5
     },
     {
-        name: 'cupidon',
+        name: 'cupid-icon',
         src: image6,
         id: 6
     }
-
 ]
 

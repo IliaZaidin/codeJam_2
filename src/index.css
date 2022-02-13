@@ -1,11 +1,11 @@
 @import url(./vendor/normalize.css);
 @import url(./fonts/fonts.css);
 
-@import url(./styles/App.css);
-@import url(./styles/Button.css);
-@import url(./styles/Card.css);
-@import url(./styles/Header.css);
-@import url(./styles/Image.css);
-@import url(./styles/Logo.css);
-@import url(./styles/Main.css);
-@import url(./styles/PopupWithImages.css);
+@import url(./components/App/App.css);
+@import url(./components/Button/Button.css);
+@import url(./components/Card/Card.css);
+@import url(./components/Header/Header.css);
+@import url(./components/Image/Image.css);
+@import url(./components/Logo/Logo.css);
+@import url(./components/Main/Main.css);
+@import url(./components/PopupWithImages/PopupWithImages.css);

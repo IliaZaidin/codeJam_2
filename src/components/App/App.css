@@ -16,3 +16,9 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+@media screen and (max-width: 999px) {
+  .App__wrapper {
+    width: 360px;
+  }
+}
