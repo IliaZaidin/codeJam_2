@@ -11,8 +11,8 @@ export function Main({ isOpen, setIsPopupWithImgOpen, onImageClick }) {
       <Card id="div1" />
 
       <div className='button-wrapper'>
-        <Button classType="button_type_add-text" text='Text' />
-        <Button classType='button_type_upload' text='Upload' />
+        <Button classType='button' text='Text' />
+        <Button classType='button' text='Upload' />
         {/* <Button classType="button_type_add-image" text='' onClick={setIsPopupWithImgOpen} /> */}
         {initialImages.map((image) => {
           return (
