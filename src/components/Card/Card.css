@@ -1,27 +1,17 @@
 .card {
-<<<<<<< HEAD
-	height: 600px;
-	width: 600px;
-	margin-top: 50px;
-	background-color: #eddbf0;
-=======
 	height: 500px;
 	width: 340px;
 	margin: 0;
 	background-color: #EDDBF0;
->>>>>>> 0513a751176f7271a0184e95bc3c66f6964435df
 	border-radius: 10px;
-
-	background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-<<<<<<< HEAD
-.card__title {
-	font-family: 'HAPPY VALENTINES DAY';
-=======
 
 @media screen and (max-width: 999px) {
   .card {
     width: 360px;
   }
->>>>>>> 0513a751176f7271a0184e95bc3c66f6964435df
 }

@@ -1,5 +1,6 @@
 .image {
-	height: 80%;
-	margin-left: 5px;
+	height: 96px;
+  width: 96px;
 	border-radius: 10px;
+  cursor: pointer;
 }

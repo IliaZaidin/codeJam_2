@@ -1,16 +1,4 @@
 .logo {
-<<<<<<< HEAD
-	background-image: url('../../images/code_jam_logo\ \(1\).svg');
-	height: 120px;
-	width: 100px;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
-	position: fixed;
-	top: 10px;
-	left: 10px;
-}
-=======
 	background-image: url('../../images/logo.png');
 	height: 102px;
 	width: 96px;
@@ -19,4 +7,3 @@
 	background-position: center;
 }
 
->>>>>>> 0513a751176f7271a0184e95bc3c66f6964435df

@@ -5,14 +5,30 @@ import { Logo } from '../Logo/Logo';
 import { useState, useEfftect } from 'react';
 
 function App() {
-  const [isPopupWithImgOpen, setIsPopupWithImgOpen] = useState(false)
+  const [isPopupWithImgOpen, setIsPopupWithImgOpen] = useState(false);
+  const [isPopupColorPickerOpen, setPopupColorPickerOpen] = useState(false);
+  const [cardBackgroundColor, setCardBackgroundColor] = useState('#EDDBF0');
+
 
   function OpenPopupWithImages() {
     setIsPopupWithImgOpen(true)
   }
 
-  function setCardBackGround(imgsrc) {
-    document.querySelector('.card').style.backgroundImage = `url(${imgsrc})`
+  function selectImage(imgsrc) {
+    // document.querySelector('.card').style.backgroundImage = `url(${imgsrc})`
+  }
+
+  function handleColorButtonClick() {
+    setPopupColorPickerOpen(true);
+  }
+
+  function handleColorPickerSubmit(event) {
+    setCardBackgroundColor(event.target.value);
+    setPopupColorPickerOpen(false);
+  }
+
+  function handleTextButtonClick() {
+    //
   }
 
   return (
@@ -24,7 +40,13 @@ function App() {
         <Main
           isOpen={isPopupWithImgOpen}
           setIsPopupWithImgOpen={OpenPopupWithImages}
-          onImageClick={setCardBackGround}
+          onImageClick={selectImage}
+          onTextButtonClick={handleTextButtonClick}
+
+          onColorButtonClick={handleColorButtonClick}
+          isPopupColorPickerOpen={isPopupColorPickerOpen}
+          onColorPickerSubmit={handleColorPickerSubmit}
+          cardBackgroundColor={cardBackgroundColor}
         />
       </div>
     </div>
