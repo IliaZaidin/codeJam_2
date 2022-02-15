@@ -4,16 +4,15 @@ import { PopupWithImages } from '../PopupWithImages/PopupWithImages'
 import { initialImages } from "../../utils/costants";
 import { Image } from "../Image/Image";
 
-export function Main({ isOpen, setIsPopupWithImgOpen, onImageClick }) {
+export function Main({ isOpen, setIsPopupWithImgOpen, onImageClick, onTextButtonClick, onColorButtonClick, isPopupColorPickerOpen, onColorPickerSubmit, cardBackgroundColor }) {
   return (
     <div className="Main">
 
-      <Card id="div1" />
+      <Card id="div1" cardBackgroundColor={cardBackgroundColor} isPopupColorPickerOpen={isPopupColorPickerOpen} onColorPickerSubmit={onColorPickerSubmit}/>
 
       <div className='button-wrapper'>
-        <Button classType='button' text='Text' />
-        <Button classType='button' text='Upload' />
-        {/* <Button classType="button_type_add-image" text='' onClick={setIsPopupWithImgOpen} /> */}
+        <Button classType='button' text='Text' onButtonClick={onTextButtonClick} />
+        <Button classType='button' text='Color' onButtonClick={onColorButtonClick} />
         {initialImages.map((image) => {
           return (
             <Image src={image.src} key={image.id} alt={image.alt} id={image.id} onImageClick={onImageClick} />

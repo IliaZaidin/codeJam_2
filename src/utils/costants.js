@@ -8,7 +8,6 @@ import image7 from '../images/flower-1-icon.png'
 import image8 from '../images/flower-2-icon.png'
 import image9 from '../images/flower-3-icon.png'
 
-
 export const initialImages = [
   {
     name: 'heart-icon',

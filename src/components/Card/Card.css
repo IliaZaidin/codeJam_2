@@ -4,8 +4,10 @@
 	margin: 0;
 	background-color: #EDDBF0;
 	border-radius: 10px;
-
-	background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 999px) {

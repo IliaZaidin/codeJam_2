@@ -1,22 +1,14 @@
 @font-face {
-	font-family: 'Skranji';
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url("./Skranji-Regular.ttf") format('ttf');
+  font-family: 'Skranji';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./Skranji-Regular.ttf") format('ttf');
 }
 
-/* @font-face {
-	font-family: 'Skranji', cursive;
-	font-style: bold;
-	font-weight: 700;
-	font-display: swap;
-	src: url("./Skranji-Bold.ttf");
-} */
-
-  @font-face {
+@font-face {
   font-family: 'Skranji';
-  font-style:  bold;
+  font-style: bold;
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/Skranji-Bold.ttf");
