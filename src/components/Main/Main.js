@@ -9,11 +9,14 @@ export function Main({ onTextButtonClick, onColorButtonClick, isPopupColorPicker
   const [initialData, setInitialData] = useState(initialImages)
   const [droppedImages, setDroppedImages] = useState([])
 
+
+
+
   function handleDropImageClick(id) {
 
-    const deleteImage = droppedImages.find((image) => image.id === id)
-    setDroppedImages(droppedImages.filter((image) => image !== deleteImage))
-    setInitialData(initialData.concat(deleteImage))
+    // const deleteImage = droppedImages.find((image) => image.id === id)
+    // setDroppedImages(droppedImages.filter((image) => image !== deleteImage))
+    // setInitialData(initialData.concat(deleteImage))
 
 
   }
@@ -22,13 +25,13 @@ export function Main({ onTextButtonClick, onColorButtonClick, isPopupColorPicker
 
       <Card setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={setDroppedImages} cardBackgroundColor={cardBackgroundColor} isPopupColorPickerOpen={isPopupColorPickerOpen} onColorPickerSubmit={onColorPickerSubmit}>
 
-        {
+        {/* {
           droppedImages.map((image) => {
             return (
               <Image onImageClick={handleDropImageClick} src={image.src} key={image.id} alt={image.alt} id={image.id} />
             )
           })
-        }
+        } */}
 
       </Card>
 
