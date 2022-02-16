@@ -1,22 +1,13 @@
 import { PopupColorPicker } from '../PopupColorPicker/PopupColorPicker';
 import { useDrop } from 'react-dnd';
-
-
 import { initialImages } from '../../utils/costants';
 
-
-
 export function Card({ setInitialData, initialData, droppedImages, onDrop, cardBackgroundColor, isPopupColorPickerOpen, onColorPickerSubmit, children }) {
-
   function handleDropItem(id) {
-
     const image = initialImages.find((image) => image.id === id)
     image.drag = true;
     onDrop([image, ...droppedImages])
     setInitialData(initialData.filter((image) => image.id !== id))
-
-
-
 
   }
 

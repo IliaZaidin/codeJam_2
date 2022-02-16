@@ -1,9 +1,10 @@
-export function PopupColorPicker({ isPopupColorPickerOpen, onColorPickerSubmit }) {
+export function PopupColorPicker({ onColorPickerSubmit }) {
   return (
-    <form className={`PopupColorPicker ${isPopupColorPickerOpen && "PopupColorPicker__visible"}`} >
-      <label className='ColorInputWrapper'>Select color
-        <input className="ColorInput" type='color' onChange={onColorPickerSubmit} defaultValue='#C69CC1' />
+    <div className="PopupColorPicker" >
+      <label className='ColorInputWrapper'>
+        <h2 className="ColorPickerTitle">Color</h2>
+        <input className="ColorInput" type='color' onChange={onColorPickerSubmit} defaultValue='#EDDBF0' />
       </label>
-    </form>
+    </div>
   )
 }

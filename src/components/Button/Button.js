@@ -1,5 +1,7 @@
-export function Button({ classType, text, onButtonClick }) {
+export function Button({ classType, text, onButtonClick, isPopupColorPickerOpen, onColorPickerSubmit }) {
   return (
-    <button className={`button ${classType}`} type="button" onClick={ onButtonClick }>{text}</button >
+    <div>
+      <button className={classType} type="button" onClick={onButtonClick}>{text}</button >
+    </div>
   )
 }

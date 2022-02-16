@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 function App() {
   const [isPopupWithImgOpen, setIsPopupWithImgOpen] = useState(false);
-  const [isPopupColorPickerOpen, setPopupColorPickerOpen] = useState(false);
   const [cardBackgroundColor, setCardBackgroundColor] = useState('#EDDBF0');
 
 
@@ -18,13 +17,8 @@ function App() {
     // document.querySelector('.card').style.backgroundImage = `url(${imgsrc})`
   }
 
-  function handleColorButtonClick() {
-    setPopupColorPickerOpen(true);
-  }
-
   function handleColorPickerSubmit(event) {
     setCardBackgroundColor(event.target.value);
-    setPopupColorPickerOpen(false);
   }
 
   function handleTextButtonClick() {
@@ -43,8 +37,6 @@ function App() {
           onImageClick={selectImage}
           onTextButtonClick={handleTextButtonClick}
 
-          onColorButtonClick={handleColorButtonClick}
-          isPopupColorPickerOpen={isPopupColorPickerOpen}
           onColorPickerSubmit={handleColorPickerSubmit}
           cardBackgroundColor={cardBackgroundColor}
         />

@@ -1,23 +1,6 @@
 .PopupColorPicker {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.PopupColorPicker__visible {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
-
-.ColorInput {
-  visibility: hidden;
 }
 
 .ColorInputWrapper {
@@ -26,9 +9,28 @@
   width: 96px;
   height: 96px;
   background-color: #8D0D8F;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "."
+  "title"
+  "picker";
+  justify-items: center;
+  cursor: pointer;
+}
+
+.ColorPickerTitle {
+  grid-area: title;
   color: white;
   font-family: Skranji;
   font-size: 26px;
   text-align: center;
-  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.ColorInput {
+  grid-area: picker;
+  visibility: hidden;
 }
