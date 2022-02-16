@@ -2,7 +2,7 @@ import '../../index.css';
 import { Header } from '../Header/Header';
 import { Main } from '../Main/Main';
 import { Logo } from '../Logo/Logo';
-import { useState, useEfftect } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [isPopupWithImgOpen, setIsPopupWithImgOpen] = useState(false);

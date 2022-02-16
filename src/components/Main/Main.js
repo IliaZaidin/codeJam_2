@@ -1,34 +1,47 @@
 import { Card } from '../Card/Card'
 import { Button } from '../Button/Button';
-import { PopupWithImages } from '../PopupWithImages/PopupWithImages'
+
 import { initialImages } from "../../utils/costants";
 import { Image } from "../Image/Image";
+import { useState } from 'react';
 
-export function Main({ isOpen, setIsPopupWithImgOpen, onImageClick, onTextButtonClick, onColorButtonClick, isPopupColorPickerOpen, onColorPickerSubmit, cardBackgroundColor }) {
+export function Main({ onTextButtonClick, onColorButtonClick, isPopupColorPickerOpen, onColorPickerSubmit, cardBackgroundColor }) {
+  const [initialData, setInitialData] = useState(initialImages)
+  const [droppedImages, setDroppedImages] = useState([])
+
+  function handleDropImageClick(id) {
+
+    const deleteImage = droppedImages.find((image) => image.id === id)
+    setDroppedImages(droppedImages.filter((image) => image !== deleteImage))
+    setInitialData(initialData.concat(deleteImage))
+
+
+  }
   return (
     <div className="Main">
 
-      <Card id="div1" cardBackgroundColor={cardBackgroundColor} isPopupColorPickerOpen={isPopupColorPickerOpen} onColorPickerSubmit={onColorPickerSubmit}/>
+      <Card setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={setDroppedImages} cardBackgroundColor={cardBackgroundColor} isPopupColorPickerOpen={isPopupColorPickerOpen} onColorPickerSubmit={onColorPickerSubmit}>
+
+        {
+          droppedImages.map((image) => {
+            return (
+              <Image onImageClick={handleDropImageClick} src={image.src} key={image.id} alt={image.alt} id={image.id} />
+            )
+          })
+        }
+
+      </Card>
 
       <div className='button-wrapper'>
         <Button classType='button' text='Text' onButtonClick={onTextButtonClick} />
         <Button classType='button' text='Color' onButtonClick={onColorButtonClick} />
-        {initialImages.map((image) => {
+        {initialData.map((image) => {
           return (
-            <Image src={image.src} key={image.id} alt={image.alt} id={image.id} onImageClick={onImageClick} />
+            <Image src={image.src} key={image.id} alt={image.alt} id={image.id} onImageClick={() => { }} />
           )
         })}
       </div>
 
-      {/* <PopupWithImages isOpen={isOpen} >
-
-        {initialImages.map((image) => {
-          return (
-            <Image src={image.src} key={image.id} alt={image.alt} id={image.id} onImageClick={onImageClick} />
-          )
-        })}
-
-      </PopupWithImages> */}
     </div>
   )
 }

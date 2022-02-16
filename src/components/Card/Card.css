@@ -2,16 +2,18 @@
 	height: 500px;
 	width: 340px;
 	margin: 0;
-	background-color: #EDDBF0;
+	background-color: #eddbf0;
 	border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 999px) {
-  .card {
-    width: 360px;
-  }
+	.card {
+		width: 360px;
+	}
 }
