@@ -1,3 +1,4 @@
+
 import image1 from '../images/heart-1-icon.png'
 import image2 from '../images/heart-2-icon.png'
 import image3 from '../images/heart-3-icon.png'
@@ -8,51 +9,62 @@ import image7 from '../images/flower-1-icon.png'
 import image8 from '../images/flower-2-icon.png'
 import image9 from '../images/flower-3-icon.png'
 
+
+
 export const initialImages = [
   {
     name: 'heart-icon',
     src: image1,
-    id: 1
+    id: 1,
+    drag: false
   },
   {
     name: 'hear-icon',
     src: image2,
-    id: 2
+    id: 2,
+    drag: false,
   },
   {
     name: 'heart-icon',
     src: image3,
-    id: 3
+    id: 3,
+    drag: false,
   },
   {
     name: 'heart-icon',
     src: image4,
-    id: 4
+    id: 4,
+    drag: false,
   },
   {
     name: 'cupid-icon',
     src: image5,
-    id: 5
+    id: 5,
+    drag: false,
   },
   {
     name: 'cupid-icon',
     src: image6,
-    id: 6
+    id: 6,
+    drag: false,
   },
   {
     name: 'flower-icon',
     src: image7,
-    id: 7
+    id: 7,
+    drag: false,
   },
   {
     name: 'flower-icon',
     src: image8,
-    id: 8
+    id: 8,
+    drag: false,
   },
   {
     name: 'flower-icon',
     src: image9,
-    id: 9
+    id: 9,
+    drag: false,
   }
 ]
 
