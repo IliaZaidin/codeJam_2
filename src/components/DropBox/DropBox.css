@@ -1,0 +1,11 @@
+.DropBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: opacity, 0.5s;
+	opacity: 1;
+}
+.DropBox:hover {
+	opacity: 0.5;
+}

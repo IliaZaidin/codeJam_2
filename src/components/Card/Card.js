@@ -2,6 +2,7 @@ import { PopupColorPicker } from '../PopupColorPicker/PopupColorPicker';
 import { useDrop } from 'react-dnd';
 import { initialImages } from '../../utils/costants';
 import { DropBox } from '../DropBox/DropBox';
+import { useState } from 'react';
 
 export function Card({ setInitialData, initialData, droppedImages, onDrop, cardBackgroundColor, isPopupColorPickerOpen, onColorPickerSubmit, children }) {
 
@@ -24,7 +25,7 @@ export function Card({ setInitialData, initialData, droppedImages, onDrop, cardB
   return (
     <div className='card' role={'container'}  >
       {/* <PopupColorPicker isPopupColorPickerOpen={isPopupColorPickerOpen} onColorPickerSubmit={onColorPickerSubmit} /> */}
-      <DropBox id={'T0'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop}  >
+      <DropBox id={'T0'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children>
         {children}
       </DropBox>
       <DropBox id={'T1'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >

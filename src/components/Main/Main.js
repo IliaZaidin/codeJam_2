@@ -12,23 +12,25 @@ export function Main({ onTextButtonClick, onColorButtonClick, isPopupColorPicker
 
 
 
-  function handleDropImageClick(id) {
+  // function handleDropImageClick(id) {
 
-    // const deleteImage = droppedImages.find((image) => image.id === id)
-    // setDroppedImages(droppedImages.filter((image) => image !== deleteImage))
-    // setInitialData(initialData.concat(deleteImage))
+  //   // const deleteImage = droppedImages.find((image) => image.id === id)
+  //   // setDroppedImages(droppedImages.filter((image) => image !== deleteImage))
+  //   // setInitialData(initialData.concat(deleteImage))
 
 
-  }
+  // } //  
+  // 
+
   return (
     <div className="Main">
 
-      <Card setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={setDroppedImages} cardBackgroundColor={cardBackgroundColor} isPopupColorPickerOpen={isPopupColorPickerOpen} onColorPickerSubmit={onColorPickerSubmit}>
+      <Card setInitialData={setInitialData} onDrop={setDroppedImages} droppedImages={droppedImages} initialData={initialData} cardBackgroundColor={cardBackgroundColor} isPopupColorPickerOpen={isPopupColorPickerOpen} onColorPickerSubmit={onColorPickerSubmit}>
 
         {/* {
           droppedImages.map((image) => {
             return (
-              <Image onImageClick={handleDropImageClick} src={image.src} key={image.id} alt={image.alt} id={image.id} />
+              <Image src={image.src} key={image.id} alt={image.alt} id={image.id} />
             )
           })
         } */}

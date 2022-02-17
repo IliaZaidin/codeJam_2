@@ -2,6 +2,7 @@ import "./Image.css"
 import { useDrag } from 'react-dnd'
 
 
+
 export function Image({ src, alt, id, position }) {
 
 
@@ -21,11 +22,14 @@ export function Image({ src, alt, id, position }) {
 
 
 
+
+
+
     return (
         <>
             <img ref={dragRef} className='image' src={src} alt={alt} id={id} style={{
-                opacity: isDragging ? '0.5' : "1",
-                position: `${position}`,
+                backgroundColor: isDragging ? 'gold' : "transperent",
+
 
             }} />
         </>
