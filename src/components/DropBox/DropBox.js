@@ -46,7 +46,7 @@ export function DropBox({ id, children, setInitialData, initialData, droppedImag
 
 
     return (
-        <div onClick={handleClick} id={id} ref={dropRef} className='DropBox' style={{ backgroundColor: isOver ? '' : 'violet' }}>
+        <div onDoubleClick={handleClick} id={id} ref={dropRef} className='DropBox' style={{ backgroundColor: isOver ? '' : 'violet' }}>
 
             {id === monitorId && state ? <Image src={img.src} key={img.id} alt={img.alt} id={img.id} /> : ''}
 
