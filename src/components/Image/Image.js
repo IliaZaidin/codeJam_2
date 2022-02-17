@@ -1,8 +1,8 @@
 import { useDrag } from 'react-dnd'
 
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 
-export function Image({ src, alt, id, position, dragging }) {
+export function Image({ src, alt, id, dragging }) {
 
     let x = 0
     const imageRef = useRef();

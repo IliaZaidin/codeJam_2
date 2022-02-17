@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { PopupColorPicker } from '../PopupColorPicker/PopupColorPicker';
 import { AudioPlayer } from '../AudioPlayer/AudioPlayer'
 
-export function Main({ cardText, onTextButtonClick, onColorPickerSubmit, cardBackgroundColor }) {
+export function Main({ onColorPickerSubmit, cardBackgroundColor }) {
   const [initialData, setInitialData] = useState(initialImages)
   const [droppedImages, setDroppedImages] = useState([])
   const [dragging, setDragging] = useState(false)

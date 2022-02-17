@@ -16,7 +16,6 @@ export function DropBox({ id, children, setInitialData, initialData, droppedImag
         image.drag = true;
         onDrop([image, ...droppedImages])
         setImg(image)
-        // setInitialData(initialData.filter((image) => image.id !== id))
         console.log(targetMonitor)
         setState(true)
     }
