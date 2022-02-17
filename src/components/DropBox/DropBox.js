@@ -1,5 +1,3 @@
-import './DropBox.css'
-
 import { useDrop } from 'react-dnd';
 import { initialImages } from '../../utils/costants';
 import { useState, useEffect } from 'react';
@@ -21,9 +19,6 @@ export function DropBox({ id, children, setInitialData, initialData, droppedImag
         // setInitialData(initialData.filter((image) => image.id !== id))
         console.log(targetMonitor)
         setState(true)
-
-
-
     }
 
 
@@ -38,12 +33,7 @@ export function DropBox({ id, children, setInitialData, initialData, droppedImag
     function handleClick() {
 
         setState(false);
-
     }
-
-
-
-
 
     return (
         <div onDoubleClick={handleClick} id={id} ref={dropRef} className='DropBox' style={{ backgroundColor: isOver ? '' : 'violet' }}>
