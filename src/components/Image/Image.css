@@ -1,6 +1,6 @@
 .image {
-	height: 50%;
-	width: 50%;
+	height: 96px;
+	width: 96px;
 	border-radius: 10px;
 	cursor: pointer;
 	transition: scale, 0.8s;

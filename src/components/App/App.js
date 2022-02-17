@@ -5,17 +5,7 @@ import { Logo } from '../Logo/Logo';
 import { useState } from 'react';
 
 function App() {
-  const [isPopupWithImgOpen, setIsPopupWithImgOpen] = useState(false);
   const [cardBackgroundColor, setCardBackgroundColor] = useState('#EDDBF0');
-
-
-  function OpenPopupWithImages() {
-    setIsPopupWithImgOpen(true)
-  }
-
-  function selectImage(imgsrc) {
-    // document.querySelector('.card').style.backgroundImage = `url(${imgsrc})`
-  }
 
   function handleColorPickerSubmit(event) {
     setCardBackgroundColor(event.target.value);
@@ -32,13 +22,9 @@ function App() {
           <Logo />
         </Header>
         <Main
-          isOpen={isPopupWithImgOpen}
-          setIsPopupWithImgOpen={OpenPopupWithImages}
-          onImageClick={selectImage}
           onTextButtonClick={handleTextButtonClick}
-
-          onColorPickerSubmit={handleColorPickerSubmit}
           cardBackgroundColor={cardBackgroundColor}
+          onColorPickerSubmit={handleColorPickerSubmit}
         />
       </div>
     </div>

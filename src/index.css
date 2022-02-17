@@ -8,5 +8,6 @@
 @import url(./components/Image/Image.css);
 @import url(./components/Logo/Logo.css);
 @import url(./components/Main/Main.css);
-@import url(./components/PopupWithImages/PopupWithImages.css);
 @import url(./components/PopupColorPicker/PopupColorPicker.css);
+@import url(./components/AudioPlayer/AudioPlayer.css);
+@import url(./components/DropBox/DropBox.css);

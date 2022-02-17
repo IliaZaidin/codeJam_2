@@ -5,9 +5,6 @@
 	background-color: #eddbf0;
 	border-radius: 10px;
 	display: grid;
-	/* flex-direction: column;
-	justify-content: center;
-	align-items: center; */
 	grid-template-rows: repeat(4, 1fr);
 	grid-template-columns: repeat(3, 1fr);
 	position: relative;
