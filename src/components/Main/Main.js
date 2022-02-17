@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { PopupColorPicker } from '../PopupColorPicker/PopupColorPicker';
 import { AudioPlayer } from '../AudioPlayer/AudioPlayer'
 
-export function Main({ onTextButtonClick, onColorPickerSubmit, cardBackgroundColor }) {
+export function Main({ cardText, onTextButtonClick, onColorPickerSubmit, cardBackgroundColor }) {
   const [initialData, setInitialData] = useState(initialImages)
   const [droppedImages, setDroppedImages] = useState([])
 
@@ -29,7 +29,7 @@ export function Main({ onTextButtonClick, onColorPickerSubmit, cardBackgroundCol
       </Card>
 
       <div className='button-wrapper'>
-        <Button classType='button' text='Text' onButtonClick={onTextButtonClick} />
+        {/* <Button classType='button' text='Text' onButtonClick={onTextButtonClick} /> */}
         <PopupColorPicker onColorPickerSubmit={onColorPickerSubmit} />
 
         {initialData.map((image) => {

@@ -1,8 +1,7 @@
 .image {
 	height: 96px;
 	width: 96px;
-	border-radius: 10px;
-	cursor: pointer;
+	border-radius: 30%;
 	transition: scale, 0.8s;
 }
 .image:hover {

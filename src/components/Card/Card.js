@@ -59,9 +59,6 @@ export function Card({ setInitialData, initialData, droppedImages, onDrop, cardB
       <DropBox id={'T11'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-
     </div >
   )
 }
-
-// backgroundColor: `${cardBackgroundColor}` 
