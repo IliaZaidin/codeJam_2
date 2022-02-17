@@ -5,23 +5,24 @@ import { useState } from 'react';
 
 export function Card({ setInitialData, initialData, droppedImages, onDrop, cardBackgroundColor, children }) {
 
-  function handleDropItem(id) {
-    const image = initialImages.find((image) => image.id === id)
-    image.drag = true;
-    onDrop([image, ...droppedImages])
-    setInitialData(initialData.filter((image) => image.id !== id))
-  }
+  // function handleDropItem(id) {
+  //   const image = initialImages.find((image) => image.id === id)
+  //   image.drag = true;
+  //   onDrop([image, ...droppedImages])
+  //   setInitialData(initialData.filter((image) => image.id !== id))
 
-  const [{ isOver }, dropRef] = useDrop({
-    accept: 'Image',
-    drop: (item) => handleDropItem(item.id),
-    collect: (monitor) => ({
-      isOver: !monitor.isOver(),
-    }),
-  })
+  // }
+
+  // const [{ isOver }, dropRef] = useDrop({
+  //   accept: 'Image',
+  //   drop: (item) => handleDropItem(item.id),
+  //   collect: (monitor) => ({
+  //     isOver: !monitor.isOver(),
+  //   }),
+  // })
 
   return (
-    <div className='card' role={'container'} style={{ backgroundColor: `${cardBackgroundColor}`}} >
+    <div className='card' role={'container'} style={{ backgroundColor: `${cardBackgroundColor}` }} >
       <DropBox id={'T0'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children>
         {children}
       </DropBox>

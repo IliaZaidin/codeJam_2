@@ -5,6 +5,7 @@ import { initialImages } from "../../utils/costants";
 import { Image } from "../Image/Image";
 import { useState } from 'react';
 import { PopupColorPicker } from '../PopupColorPicker/PopupColorPicker';
+import { AudioPlayer } from '../AudioPlayer/AudioPlayer'
 
 export function Main({ cardText, onTextButtonClick, onColorPickerSubmit, cardBackgroundColor }) {
   const [initialData, setInitialData] = useState(initialImages)
@@ -19,12 +20,12 @@ export function Main({ cardText, onTextButtonClick, onColorPickerSubmit, cardBac
   return (
     <div className="Main">
 
-      <Card setInitialData={setInitialData} onDrop={setDroppedImages} droppedImages={droppedImages} initialData={initialData} cardText={cardText} cardBackgroundColor={cardBackgroundColor} children>
-        {droppedImages.map((image) => {
+      <Card setInitialData={setInitialData} onDrop={setDroppedImages} droppedImages={droppedImages} initialData={initialData} cardBackgroundColor={cardBackgroundColor} children>
+        {/* {droppedImages.map((image) => {
           return (
             <Image src={image.src} key={image.id} alt={image.alt} id={image.id} />
           )
-        })}
+        })} */}
       </Card>
 
       <div className='button-wrapper'>
@@ -37,6 +38,7 @@ export function Main({ cardText, onTextButtonClick, onColorPickerSubmit, cardBac
           )
         })}
       </div>
+      <AudioPlayer />
     </div>
   )
 }
