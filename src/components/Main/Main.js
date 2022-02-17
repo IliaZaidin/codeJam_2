@@ -10,22 +10,23 @@ import { AudioPlayer } from '../AudioPlayer/AudioPlayer'
 export function Main({ cardText, onTextButtonClick, onColorPickerSubmit, cardBackgroundColor }) {
   const [initialData, setInitialData] = useState(initialImages)
   const [droppedImages, setDroppedImages] = useState([])
+  const [dragging, setDragging] = useState(false)
 
-  // function handleDropImageClick(id) {
-  //   const deleteImage = droppedImages.find((image) => image.id === id)
-  //   setDroppedImages(droppedImages.filter((image) => image !== deleteImage))
-  //   setInitialData(initialData.concat(deleteImage))
-  // }
+  function handleDragModeClick() {
+    setDragging(!dragging)
+
+  }
+
+
 
   return (
     <div className="Main">
+      <div className='panel-wrapper'>
+        <Button classType='on-off-drag-mode' text='drag on/off' onButtonClick={handleDragModeClick} />
 
-      <Card setInitialData={setInitialData} onDrop={setDroppedImages} droppedImages={droppedImages} initialData={initialData} cardBackgroundColor={cardBackgroundColor} children>
-        {/* {droppedImages.map((image) => {
-          return (
-            <Image src={image.src} key={image.id} alt={image.alt} id={image.id} />
-          )
-        })} */}
+      </div>
+      <Card dragging={dragging} setInitialData={setInitialData} onDrop={setDroppedImages} droppedImages={droppedImages} initialData={initialData} cardBackgroundColor={cardBackgroundColor} children>
+
       </Card>
 
       <div className='button-wrapper'>

@@ -3,7 +3,7 @@ import { initialImages } from '../../utils/costants';
 import { DropBox } from '../DropBox/DropBox';
 import { useState } from 'react';
 
-export function Card({ setInitialData, initialData, droppedImages, onDrop, cardBackgroundColor, children }) {
+export function Card({ dragging, setInitialData, initialData, droppedImages, onDrop, cardBackgroundColor, children }) {
 
   // function handleDropItem(id) {
   //   const image = initialImages.find((image) => image.id === id)
@@ -23,40 +23,40 @@ export function Card({ setInitialData, initialData, droppedImages, onDrop, cardB
 
   return (
     <div className='card' role={'container'} style={{ backgroundColor: `${cardBackgroundColor}` }} >
-      <DropBox id={'T0'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children>
+      <DropBox dragging={dragging} id={'T0'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children>
         {children}
       </DropBox>
-      <DropBox id={'T1'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T1'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T2'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T2'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T3'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T3'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T4'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T4'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T5'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T5'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T6'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T6'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T7'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T7'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T8'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T8'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T9'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T9'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T10'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T10'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
-      <DropBox id={'T11'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
+      <DropBox dragging={dragging} id={'T11'} setInitialData={setInitialData} initialData={initialData} droppedImages={droppedImages} onDrop={onDrop} children >
         {children}
       </DropBox>
     </div >
