@@ -11,10 +11,6 @@ function App() {
     setCardBackgroundColor(event.target.value);
   }
 
-  function handleTextButtonClick() {
-    //
-  }
-
   return (
     <div className='App'>
       <div className='App__wrapper'>
@@ -22,7 +18,6 @@ function App() {
           <Logo />
         </Header>
         <Main
-          onTextButtonClick={handleTextButtonClick}
           cardBackgroundColor={cardBackgroundColor}
           onColorPickerSubmit={handleColorPickerSubmit}
         />

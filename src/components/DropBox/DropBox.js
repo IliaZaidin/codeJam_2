@@ -9,7 +9,6 @@ export function DropBox({ id, children, setInitialData, initialData, droppedImag
   const [img, setImg] = useState([])
   const [state, setState] = useState(true)
 
-
   function handleDropItem(id, targetMonitor) {
     setMonitorId(targetMonitor.targetId)
     const image = initialImages.find((image) => image.id === id)
@@ -21,7 +20,6 @@ export function DropBox({ id, children, setInitialData, initialData, droppedImag
     setState(true)
   }
 
-
   const [{ isOver }, dropRef] = useDrop({
     accept: 'Image',
     drop: (item, targetMonitor) => { handleDropItem(item.id, targetMonitor) },
@@ -31,15 +29,11 @@ export function DropBox({ id, children, setInitialData, initialData, droppedImag
   })
 
   function handleClick() {
-
     setState(false);
-
   }
   return (
     <div onClick={handleClick} id={id} ref={dropRef} className='DropBox' style={{ backgroundColor: isOver ? '' : 'violet' }}>
-
       {id === monitorId && state ? <Image src={img.src} key={img.id} alt={img.alt} id={img.id} /> : ''}
-
     </div >
   )
 }

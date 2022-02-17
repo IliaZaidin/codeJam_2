@@ -8,8 +8,8 @@ import image6 from '../images/cupid-2-icon.png'
 import image7 from '../images/flower-1-icon.png'
 import image8 from '../images/flower-2-icon.png'
 import image9 from '../images/flower-3-icon.png'
-
-
+import image10 from '../images/love-1-icon.png'
+import image11 from '../images/love-2-icon.png'
 
 export const initialImages = [
   {
@@ -64,6 +64,18 @@ export const initialImages = [
     name: 'flower-icon',
     src: image9,
     id: 9,
+    drag: false,
+  },
+  {
+    name: 'love-icon',
+    src: image10,
+    id: 10,
+    drag: false,
+  },
+  {
+    name: 'love-icon',
+    src: image11,
+    id: 11,
     drag: false,
   }
 ]
