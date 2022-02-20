@@ -2,9 +2,10 @@ import { useDrag } from 'react-dnd'
 
 import { useRef } from 'react'
 
-export function Image({ src, alt, id, position }) {
+export function Image({ src, alt, id, dragging }) {
 
-    const imageRef = { useRef }
+    let x = 0
+    const imageRef = useRef();
 
     const [{ isDragging }, dragRef] = useDrag({
         type: 'Image',
@@ -15,9 +16,24 @@ export function Image({ src, alt, id, position }) {
         }),
     })
 
+    function click() {
+        if (dragging) {
+            x = x + 45;
+
+            imageRef.current.style.transform = `rotate(${x}deg)`
+
+            console.log(imageRef.current.style)
+
+
+        }
+
+
+    }
+
+
     return (
         <>
-            <img onClick={() => console.log(imageRef.current)} ref={dragRef} className='image' src={src} alt={alt} id={id} style={{
+            <img onClick={click} ref={dragging ? imageRef : dragRef} className='image' src={src} alt={alt} id={id} style={{
                 backgroundColor: isDragging ? 'gold' : "transperent",
             }} />
         </>

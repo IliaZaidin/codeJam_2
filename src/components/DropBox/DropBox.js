@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Image } from '../Image/Image';
 
 
-export function DropBox({ id, children, setInitialData, initialData, droppedImages, onDrop }) {
+export function DropBox({ id, children, setInitialData, initialData, droppedImages, onDrop, dragging }) {
     const [monitorId, setMonitorId] = useState('')
     const [img, setImg] = useState([])
     const [state, setState] = useState(true)
@@ -16,7 +16,6 @@ export function DropBox({ id, children, setInitialData, initialData, droppedImag
         image.drag = true;
         onDrop([image, ...droppedImages])
         setImg(image)
-        // setInitialData(initialData.filter((image) => image.id !== id))
         console.log(targetMonitor)
         setState(true)
     }
@@ -38,7 +37,7 @@ export function DropBox({ id, children, setInitialData, initialData, droppedImag
     return (
         <div onDoubleClick={handleClick} id={id} ref={dropRef} className='DropBox' style={{ backgroundColor: isOver ? '' : 'violet' }}>
 
-            {id === monitorId && state ? <Image src={img.src} key={img.id} alt={img.alt} id={img.id} /> : ''}
+            {id === monitorId && state ? <Image dragging={dragging} src={img.src} key={img.id} alt={img.alt} id={img.id} /> : ''}
 
         </div >
     )

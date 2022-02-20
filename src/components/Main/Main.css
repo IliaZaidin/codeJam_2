@@ -1,20 +1,37 @@
 .Main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .button-wrapper {
-  margin: 15px 0;
-  width: 100%;
-  height: 120px;
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  align-items: center;
-  overflow-x: scroll;
-  overflow-y: hidden;
+	margin: 15px 0;
+	width: 100%;
+	height: 120px;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	align-items: center;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.on-off-drag-mode {
+	background-color: blueviolet;
+	margin-bottom: 5px;
+	font-family: monospace;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.on-off-drag-mode:focus {
+	background-color: rgb(56, 33, 74);
 }
 
+.panel-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+}
