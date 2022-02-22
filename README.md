@@ -11,3 +11,8 @@ Link to the page: https://iliazaidin.github.io/codeJam_2/
 Link to Figma code: https://www.figma.com/file/M0xyW9wEWU6A02YRrcE4l2/February_Code_Jam?node-id=25%3A12
 
 Link to YouTube life streaming recording: https://youtu.be/blDdIdaCDHc?t=260
+
+The tune used in project: Warm Memories - Emotional Inspiring Piano by Keys of Moon | https://soundcloud.com/keysofmoon
+Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Music promoted by https://www.chosic.com/free-music/all/ 
