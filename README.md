@@ -12,8 +12,7 @@ Our webpage helps people create Valentine's cards and send them to their beloved
 
 [Link to YouTube life streaming recording](https://youtu.be/blDdIdaCDHc?t=260)
 
-The tune used in project: 
-Warm Memories - Emotional Inspiring Piano by Keys of Moon | https://soundcloud.com/keysofmoon
+The tune used in project: Warm Memories - Emotional Inspiring Piano by Keys of Moon | https://soundcloud.com/keysofmoon
 Attribution 4.0 International (CC BY 4.0)
 https://creativecommons.org/licenses/by/4.0/
 Music promoted by https://www.chosic.com/free-music/all/ 
